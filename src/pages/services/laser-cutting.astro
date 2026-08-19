@@ -1,0 +1,291 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import RfqEstimator from '../../components/RfqEstimator.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout 
+  title="6kW High-Power Fiber Laser Cutting Services | Jecon Engineering Services"
+  description="High-speed 6kW Fiber Laser Cutting in Vadodara, Gujarat. Cutting up to 25mm Mild Steel, 20mm Stainless Steel, and Aluminum with clean, dross-free edges."
+>
+  <Header currentPath="/services/laser-cutting" />
+
+  <main class="service-detail-main">
+    <div class="service-hero-section">
+      <div class="container">
+        <div class="service-hero-content">
+          <div class="tech-badge orange">
+            <span class="dot"></span>
+            <span>6kW OPTICAL FIBER CUTTING</span>
+          </div>
+          <h1>High-Power <span class="gradient-text-orange">Fiber Laser Cutting</span></h1>
+          <p>
+            Precision sheet metal and heavy plate laser profiling powered by 6,000-Watt solid-state fiber optics, automatic dual shuttle tables, and high-pressure nitrogen gas assist.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="section service-body-section">
+      <div class="container">
+        <div class="service-detail-grid">
+          
+          <div class="detail-body-col">
+            <div class="media-feature-card">
+              <img src="/assets/images/laser-cutting.jpeg" alt="Fiber Laser Cutter cutting steel sheet with sparks" />
+              <div class="media-feature-caption">6kW Fiber Laser executing high-speed intricate profiling on stainless steel plate</div>
+            </div>
+
+            <h2>High-Speed, Dross-Free Edge Quality</h2>
+            <p>
+              Our fiber laser cutting facility at GIDC Savli Manjusar eliminates secondary deburring and grinding operations. With specialized optical beam shaping and precision CNC positioning, we achieve mirror edge squareness across both ultra-thin sheet gauges and heavy industrial plates.
+            </p>
+
+            <div class="feature-bullets-grid">
+              <div class="feat-box cyber-card">
+                <h4>High-Pressure Nitrogen Cutting</h4>
+                <p>Oxide-free, weld-ready bright edges on stainless steel and aluminum, suitable for immediate powder coating or sanitary food grade use.</p>
+              </div>
+              <div class="feat-box cyber-card">
+                <h4>Dual Automatic Shuttle Tables</h4>
+                <p>3000 x 1500 mm dual pallet exchange allows continuous loading and unloading while cutting, maximizing throughput for large batch orders.</p>
+              </div>
+              <div class="feat-box cyber-card">
+                <h4>Intelligent Auto-Nesting</h4>
+                <p>CAD nesting algorithms optimize sheet utilization up to 92%, drastically lowering raw material scrap and overall part cost for clients.</p>
+              </div>
+              <div class="feat-box cyber-card">
+                <h4>Fine Intricate Contouring</h4>
+                <p>Capable of cutting hole diameters smaller than plate thickness with zero taper and exceptional geometric repeatability.</p>
+              </div>
+            </div>
+
+            <!-- Material Thickness Cutting Chart -->
+            <h3>Maximum Cutting Thickness by Alloy</h3>
+            <div class="table-responsive">
+              <table class="tech-spec-table">
+                <thead>
+                  <tr>
+                    <th>Material Type</th>
+                    <th>Max Thickness</th>
+                    <th>Assist Gas Used</th>
+                    <th>Edge Characteristic</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Mild Steel (IS 2062 / Corten)</strong></td>
+                    <td><span class="highlight-orange">Up to 25 mm</span></td>
+                    <td>High-Pressure Oxygen (O2)</td>
+                    <td>Smooth square edge, minimal burr</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Stainless Steel (SS 304 / 316L)</strong></td>
+                    <td><span class="highlight-orange">Up to 20 mm</span></td>
+                    <td>Ultra-High Pressure Nitrogen (N2)</td>
+                    <td>100% Oxide-free, bright metallic finish</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Aluminum (6061 / 5052 / 7075)</strong></td>
+                    <td><span class="highlight-orange">Up to 16 mm</span></td>
+                    <td>High-Pressure Nitrogen (N2)</td>
+                    <td>Clean burr-free edge</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Brass & Copper (C360 / C110)</strong></td>
+                    <td><span class="highlight-orange">Up to 10 mm</span></td>
+                    <td>High-Pressure Nitrogen / Compressed Air</td>
+                    <td>Anti-reflective optical protection</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+
+          <aside class="detail-sidebar-col">
+            <div class="sidebar-card cyber-card">
+              <h4>Instant Laser Cut Quotation</h4>
+              <p>Send DXF / DWG files for same-day nesting and price estimation.</p>
+              <div class="side-contact-list">
+                <div class="side-item">
+                  <span>Plant Head Contact:</span>
+                  <strong>Mr. Devendra Singh</strong>
+                </div>
+                <div class="side-item">
+                  <span>Direct WhatsApp:</span>
+                  <a href="tel:+918511142772">+91 85111 42772</a>
+                </div>
+                <div class="side-item">
+                  <span>Email DXF Files:</span>
+                  <a href="mailto:info@jeconengineers.com">info@jeconengineers.com</a>
+                </div>
+              </div>
+              <a href="#rfq-calculator" class="btn btn-orange w-full">Request Laser RFQ</a>
+            </div>
+
+            <div class="sidebar-card cyber-card">
+              <h4>Post-Laser Fabrication</h4>
+              <p>Direct downstream processing including 150-Ton CNC Press Brake bending, spot welding, and surface finishing under one roof.</p>
+              <a href="/services/sheet-metal-fabrication" class="btn btn-outline w-full">View Bending Capabilities</a>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <RfqEstimator />
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .service-hero-section {
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    padding: 5rem 0 3rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .service-hero-content {
+    max-width: 800px;
+  }
+
+  .service-hero-content h1 {
+    margin: 1rem 0 1rem 0;
+  }
+
+  .service-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 3rem;
+  }
+
+  .detail-body-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .media-feature-card {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .media-feature-card img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+  }
+
+  .media-feature-caption {
+    background: var(--bg-card);
+    padding: 0.85rem 1.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .feat-box {
+    padding: 1.5rem;
+  }
+
+  .feature-bullets-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .tech-spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+  }
+
+  .tech-spec-table th, .tech-spec-table td {
+    padding: 1rem 1.25rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .tech-spec-table th {
+    background: var(--bg-tertiary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent-orange);
+    text-transform: uppercase;
+  }
+
+  .highlight-orange {
+    color: var(--accent-orange);
+    font-family: var(--font-mono);
+    font-weight: 700;
+  }
+
+  .detail-sidebar-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sidebar-card {
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .side-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+    background: var(--bg-tertiary);
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-subtle);
+  }
+
+  .side-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-item span {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-muted);
+  }
+
+  .side-item strong, .side-item a {
+    color: var(--text-primary);
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    .service-detail-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .feature-bullets-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

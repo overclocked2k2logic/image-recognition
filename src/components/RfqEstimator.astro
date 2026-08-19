@@ -1,0 +1,668 @@
+---
+// Interactive RFQ & Cost Estimator Component
+---
+
+<section class="section rfq-section" id="rfq-calculator">
+  <div class="container">
+    <!-- Header -->
+    <div class="section-header">
+      <div class="tech-badge amber">
+        <span class="dot"></span>
+        <span>INSTANT ENGINEERING SPECIFICATION</span>
+      </div>
+      <h2>Request a Precision <span class="gradient-text-orange">Quotation (RFQ)</span></h2>
+      <p>
+        Configure your manufacturing requirements below to generate an instant engineering project specification. 
+        Our Vadodara engineering team reviews drawings within 2 to 4 business hours.
+      </p>
+    </div>
+
+    <div class="rfq-container">
+      <div class="rfq-calculator-card cyber-card">
+        
+        <!-- Step 1: Manufacturing Process -->
+        <div class="calculator-step">
+          <div class="step-header">
+            <span class="step-num">01</span>
+            <h4>Select Primary Manufacturing Process</h4>
+          </div>
+          <div class="option-grid process-grid">
+            <label class="process-card active" data-process="CNC Milling (3/4/5-Axis)">
+              <input type="radio" name="process" value="CNC Milling" checked />
+              <div class="card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              </div>
+              <div class="card-info">
+                <strong>CNC Milling</strong>
+                <span>3/4/5-Axis VMC</span>
+              </div>
+            </label>
+
+            <label class="process-card" data-process="CNC Turning Center">
+              <input type="radio" name="process" value="CNC Turning" />
+              <div class="card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+              </div>
+              <div class="card-info">
+                <strong>CNC Turning</strong>
+                <span>Precision Lathe</span>
+              </div>
+            </label>
+
+            <label class="process-card" data-process="6kW Fiber Laser Cutting">
+              <input type="radio" name="process" value="Fiber Laser Cutting" />
+              <div class="card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg>
+              </div>
+              <div class="card-info">
+                <strong>Laser Cutting</strong>
+                <span>6kW Fiber Optic</span>
+              </div>
+            </label>
+
+            <label class="process-card" data-process="Sheet Metal Bending & Press Brake">
+              <input type="radio" name="process" value="Sheet Metal Bending" />
+              <div class="card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              </div>
+              <div class="card-info">
+                <strong>Sheet Bending</strong>
+                <span>150-Ton CNC Press</span>
+              </div>
+            </label>
+
+            <label class="process-card" data-process="Heavy & Structural Fabrication">
+              <input type="radio" name="process" value="Heavy Fabrication" />
+              <div class="card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <div class="card-info">
+                <strong>Fabrication</strong>
+                <span>TIG/MIG Welding</span>
+              </div>
+            </label>
+
+            <label class="process-card" data-process="CAD / CAM & Engineering Design">
+              <input type="radio" name="process" value="CAD Engineering" />
+              <div class="card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </div>
+              <div class="card-info">
+                <strong>CAD / Design</strong>
+                <span>3D Modeling & DFM</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Step 2: Material & Tolerance Grid -->
+        <div class="calculator-step">
+          <div class="step-header">
+            <span class="step-num">02</span>
+            <h4>Material Grade, Tolerance & Quantity</h4>
+          </div>
+          
+          <div class="form-row-3">
+            <div class="form-group">
+              <label class="form-label" for="rfq-material">Material Alloy</label>
+              <select id="rfq-material" class="form-select">
+                <option value="Stainless Steel 316L (Marine/Pharma Grade)">Stainless Steel 316L</option>
+                <option value="Stainless Steel 304 (Standard Food/Ind)">Stainless Steel 304</option>
+                <option value="Mild Steel IS 2062 / EN8 (Structural)">Mild Steel (IS2062 / EN8)</option>
+                <option value="Aluminum 6061-T6 (Aerospace/Industrial)">Aluminum 6061-T6</option>
+                <option value="Aluminum 7075-T6 (High Strength)">Aluminum 7075-T6</option>
+                <option value="Brass C360 / Copper C110">Brass C360 / Copper</option>
+                <option value="Titanium Grade 5 / Inconel 625">Titanium / Inconel 625</option>
+                <option value="Delrin / POM / Engineering Plastic">Engineering Plastic (Delrin/PEEK)</option>
+                <option value="Customer Supplied Material">Customer Supplied Raw Stock</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="rfq-tolerance">Required Tolerance</label>
+              <select id="rfq-tolerance" class="form-select">
+                <option value="Ultra-Precision (± 0.005 mm / 5 Microns)">Ultra-Precision (± 0.005 mm)</option>
+                <option value="High Precision (± 0.02 mm)">High Precision (± 0.02 mm)</option>
+                <option value="Standard Machining (± 0.10 mm)" selected>Standard Machining (± 0.10 mm)</option>
+                <option value="Fabrication Commercial (± 0.50 mm)">Fabrication Standard (± 0.50 mm)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="rfq-quantity">Production Quantity</label>
+              <select id="rfq-quantity" class="form-select">
+                <option value="Prototype (1 - 5 Parts)">Prototype (1 - 5 Parts)</option>
+                <option value="Small Batch (10 - 50 Parts)" selected>Small Batch (10 - 50 Parts)</option>
+                <option value="Mid Volume (100 - 500 Parts)">Mid Volume (100 - 500 Parts)</option>
+                <option value="High Volume Production (1,000 - 10,000+)">High Volume (1,000 - 10,000+)</option>
+                <option value="Recurring Monthly Supply Contract">Recurring Monthly Supply Contract</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label" for="rfq-finish">Surface Treatment / Finishing</label>
+              <select id="rfq-finish" class="form-select">
+                <option value="Standard As-Machined (Ra 1.6 - 3.2 µm)" selected>Standard As-Machined</option>
+                <option value="Fine Micro-Machined (Ra 0.4 - 0.8 µm)">Fine Micro-Machined (Ra 0.4 - 0.8 µm)</option>
+                <option value="Bead Blasted / Matte Finish">Bead Blasted / Matte Satin</option>
+                <option value="Anodized (Type II Clear or Color)">Anodized Type II (Color/Clear)</option>
+                <option value="Hard Anodized (Type III Heavy Duty)">Hard Anodized Type III</option>
+                <option value="Electropolished (Stainless Steel)">Electropolished (SS Ultra Clean)</option>
+                <option value="Zinc / Nickel Electroplated">Zinc / Nickel Electroplated</option>
+                <option value="Powder Coated / Industrial Painted">Industrial Powder Coated</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="rfq-timeline">Target Timeline</label>
+              <select id="rfq-timeline" class="form-select">
+                <option value="Standard (7 - 10 Working Days)" selected>Standard (7 - 10 Working Days)</option>
+                <option value="Express Expedited (3 - 5 Days)">Express Expedited (3 - 5 Days)</option>
+                <option value="Urgent Prototype (48 Hours)">Urgent Prototype (48 Hours)</option>
+                <option value="Scheduled Project Milestone Delivery">Scheduled Milestone Delivery</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Drawing Upload & Project Details -->
+        <div class="calculator-step">
+          <div class="step-header">
+            <span class="step-num">03</span>
+            <h4>Engineering Drawings & Project Notes</h4>
+          </div>
+
+          <div class="drawing-dropzone" id="dropzone">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            <div class="drop-text">
+              <strong>Attach 2D/3D CAD Drawing or Technical Spec</strong>
+              <span>Supports .STEP, .IGES, .DXF, .DWG, .SLDPRT, .PDF, .ZIP (Max 50MB)</span>
+            </div>
+            <input type="file" id="rfq-file-input" class="hidden-file-input" multiple />
+            <button type="button" class="btn btn-outline btn-sm" onclick="document.getElementById('rfq-file-input').click()">Browse Files</button>
+            <div id="file-list-preview" class="file-list-preview"></div>
+          </div>
+        </div>
+
+        <!-- Step 4: Contact & Submission -->
+        <div class="calculator-step">
+          <div class="step-header">
+            <span class="step-num">04</span>
+            <h4>Contact Details for Quotation Delivery</h4>
+          </div>
+
+          <form id="rfq-form" onsubmit="event.preventDefault(); window.handleRfqSubmit();">
+            <div class="form-row-3">
+              <div class="form-group">
+                <label class="form-label" for="client-name">Your Full Name *</label>
+                <input type="text" id="client-name" class="form-input" placeholder="e.g. Rajesh Patel" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="client-company">Company / Organization *</label>
+                <input type="text" id="client-company" class="form-input" placeholder="e.g. Reliance / L&T / Petrochem Corp" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="client-phone">Phone Number (WhatsApp) *</label>
+                <input type="tel" id="client-phone" class="form-input" placeholder="e.g. +91 98765 43210" required />
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label" for="client-email">Official Email Address *</label>
+                <input type="email" id="client-email" class="form-input" placeholder="e.g. r.patel@company.com" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="client-city">City / Delivery Location</label>
+                <input type="text" id="client-city" class="form-input" placeholder="e.g. Vadodara / Dahej / Hazira / Mumbai" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="client-notes">Additional Technical Requirements / Material Specs / Inspection Criteria</label>
+              <textarea id="client-notes" class="form-textarea" rows="3" placeholder="Specify any CMM inspection reports, hardness testing, NDT dye penetrant, or specific alloy heat numbers required..."></textarea>
+            </div>
+
+            <!-- Instant Spec Summary Box -->
+            <div class="spec-summary-box">
+              <div class="summary-header">
+                <span class="summary-title">AUTO-GENERATED RFQ SPECIFICATION TICKET</span>
+                <span class="summary-id" id="summary-ticket-id">REF: JECON-RFQ-LIVE</span>
+              </div>
+              <div class="summary-content" id="summary-content">
+                <strong>Process:</strong> <span id="sum-process">CNC Milling (3/4/5-Axis)</span> | 
+                <strong>Material:</strong> <span id="sum-material">Stainless Steel 316L</span> | 
+                <strong>Tolerance:</strong> <span id="sum-tolerance">Standard Machining (± 0.10 mm)</span> | 
+                <strong>Quantity:</strong> <span id="sum-quantity">Small Batch (10 - 50 Parts)</span>
+              </div>
+            </div>
+
+            <!-- Submit Action Buttons -->
+            <div class="submit-actions">
+              <button type="submit" class="btn btn-primary btn-lg submit-rfq-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                <span>Submit RFQ to Engineering Team</span>
+              </button>
+              
+              <button type="button" class="btn btn-outline btn-lg whatsapp-rfq-btn" onclick="window.sendToWhatsApp()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#25d366" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                <span>Instant Quote on WhatsApp</span>
+              </button>
+            </div>
+
+            <div class="security-disclaimer">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span>All CAD models, blueprints & IP protected under strict Non-Disclosure Agreements (NDA). Standard response within 2-4 hours.</span>
+            </div>
+          </form>
+
+          <!-- Success Modal / Alert -->
+          <div id="rfq-success-alert" class="rfq-success-modal hidden">
+            <div class="success-content">
+              <div class="success-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <h4>RFQ Successfully Submitted!</h4>
+              <p>
+                Thank you. Your engineering inquiry has been routed to <strong>Mr. Devendra Singh (General Manager)</strong> and our technical estimator at the Savli plant. We will review your drawings and respond promptly.
+              </p>
+              <div class="success-contacts">
+                <span>Immediate Assistance: <strong>+91 85111 42772</strong> / <strong>+91 83208 97847</strong></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .rfq-section {
+    position: relative;
+    background: var(--bg-primary);
+  }
+
+  .rfq-container {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+
+  .rfq-calculator-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 2.75rem;
+  }
+
+  .calculator-step {
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 2rem;
+  }
+
+  .calculator-step:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .step-header {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .step-num {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent-cyan);
+    background: var(--accent-cyan-subtle);
+    border: 1px solid var(--border-active);
+    padding: 0.25rem 0.6rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .step-header h4 {
+    font-size: 1.25rem;
+  }
+
+  /* Process Radio Cards */
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .process-card {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 1.1rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+  }
+
+  .process-card input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .process-card:hover {
+    border-color: var(--accent-cyan);
+    transform: translateY(-2px);
+    background: var(--accent-cyan-subtle);
+  }
+
+  .process-card.active {
+    border-color: var(--accent-cyan);
+    background: var(--accent-cyan-subtle);
+    box-shadow: 0 4px 18px rgba(2, 132, 199, 0.25);
+    transform: translateY(-2px);
+  }
+
+  .card-icon {
+    color: var(--accent-cyan);
+    flex-shrink: 0;
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-info strong {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+  }
+
+  .card-info span {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+  }
+
+  /* Form Rows */
+  .form-row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .form-row-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  /* Dropzone */
+  .drawing-dropzone {
+    border: 2px dashed var(--border-active);
+    background: var(--accent-cyan-subtle);
+    border-radius: var(--radius-md);
+    padding: 2.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.85rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+
+  .drawing-dropzone:hover {
+    background: rgba(2, 132, 199, 0.12);
+    border-color: var(--accent-cyan);
+    transform: scale(1.01);
+  }
+
+  .drop-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .drop-text strong {
+    font-size: 1rem;
+    color: var(--text-primary);
+  }
+
+  .drop-text span {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .hidden-file-input {
+    display: none;
+  }
+
+  .file-list-preview {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-cyan);
+    margin-top: 0.5rem;
+  }
+
+  /* Spec Summary Box */
+  .spec-summary-box {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-active);
+    border-radius: var(--radius-md);
+    padding: 1.35rem;
+    margin: 1.5rem 0;
+    box-shadow: var(--shadow-sm);
+    font-family: var(--font-mono);
+  }
+
+  .summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .summary-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent-cyan);
+    letter-spacing: 0.06em;
+  }
+
+  .summary-id {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  .summary-content {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+  }
+
+  .summary-content strong {
+    color: var(--text-primary);
+  }
+
+  .summary-content span {
+    color: var(--accent-cyan);
+    font-weight: 600;
+  }
+
+  /* Submit Actions */
+  .submit-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .submit-rfq-btn {
+    flex: 1.2;
+  }
+
+  .whatsapp-rfq-btn {
+    flex: 1;
+    border-color: rgba(37, 211, 102, 0.4);
+    color: #25d366;
+  }
+
+  .whatsapp-rfq-btn:hover {
+    background: rgba(37, 211, 102, 0.1);
+    border-color: #25d366;
+    color: #25d366;
+  }
+
+  .security-disclaimer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+
+  /* Success Modal */
+  .rfq-success-modal {
+    margin-top: 1.5rem;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.5);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    animation: fadeIn 0.4s ease;
+  }
+
+  .rfq-success-modal.hidden {
+    display: none;
+  }
+
+  .success-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .success-content h4 {
+    color: #10b981;
+    font-size: 1.2rem;
+  }
+
+  .success-content p {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+  }
+
+  .success-contacts {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+
+  @media (max-width: 900px) {
+    .process-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .form-row-3, .form-row-2 {
+      grid-template-columns: 1fr;
+    }
+    .rfq-calculator-card {
+      padding: 1.5rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .process-grid {
+      grid-template-columns: 1fr;
+    }
+    .submit-actions {
+      flex-direction: column;
+    }
+  }
+</style>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Live summary updater
+    const processCards = document.querySelectorAll('.process-card');
+    const materialSelect = document.getElementById('rfq-material');
+    const toleranceSelect = document.getElementById('rfq-tolerance');
+    const quantitySelect = document.getElementById('rfq-quantity');
+
+    const sumProcess = document.getElementById('sum-process');
+    const sumMaterial = document.getElementById('sum-material');
+    const sumTolerance = document.getElementById('sum-tolerance');
+    const sumQuantity = document.getElementById('sum-quantity');
+
+    let currentProcess = "CNC Milling (3/4/5-Axis)";
+
+    processCards.forEach(card => {
+      card.addEventListener('click', () => {
+        processCards.forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+        const radio = card.querySelector('input[type="radio"]');
+        if (radio) radio.checked = true;
+        currentProcess = card.getAttribute('data-process') || radio?.value || "CNC Milling";
+        if (sumProcess) sumProcess.textContent = currentProcess;
+      });
+    });
+
+    function updateSummary() {
+      if (sumMaterial && materialSelect) sumMaterial.textContent = materialSelect.value;
+      if (sumTolerance && toleranceSelect) sumTolerance.textContent = toleranceSelect.value;
+      if (sumQuantity && quantitySelect) sumQuantity.textContent = quantitySelect.value;
+    }
+
+    materialSelect?.addEventListener('change', updateSummary);
+    toleranceSelect?.addEventListener('change', updateSummary);
+    quantitySelect?.addEventListener('change', updateSummary);
+
+    // File input preview
+    const fileInput = document.getElementById('rfq-file-input');
+    const previewDiv = document.getElementById('file-list-preview');
+
+    fileInput?.addEventListener('change', (e) => {
+      const files = Array.from(e.target.files || []);
+      if (files.length > 0 && previewDiv) {
+        previewDiv.innerHTML = files.map(f => `Attached: ${f.name} (${(f.size/1024/1024).toFixed(2)} MB)`).join('<br>');
+      }
+    });
+
+    // Submit handler
+    window.handleRfqSubmit = function() {
+      const successModal = document.getElementById('rfq-success-alert');
+      if (successModal) {
+        successModal.classList.remove('hidden');
+        successModal.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    // WhatsApp handler
+    window.sendToWhatsApp = function() {
+      const name = document.getElementById('client-name')?.value || 'Prospective Client';
+      const company = document.getElementById('client-company')?.value || 'Engineering Dept';
+      const material = materialSelect?.value || 'SS 316L';
+      const tolerance = toleranceSelect?.value || '±0.02 mm';
+      const quantity = quantitySelect?.value || 'Batch';
+      const notes = document.getElementById('client-notes')?.value || 'Standard production RFQ';
+
+      const message = `*RFQ Inquiry - Jecon Engineering Services*%0A` +
+        `*Name:* ${encodeURIComponent(name)}%0A` +
+        `*Company:* ${encodeURIComponent(company)}%0A` +
+        `*Process:* ${encodeURIComponent(currentProcess)}%0A` +
+        `*Material:* ${encodeURIComponent(material)}%0A` +
+        `*Tolerance:* ${encodeURIComponent(tolerance)}%0A` +
+        `*Quantity:* ${encodeURIComponent(quantity)}%0A` +
+        `*Notes:* ${encodeURIComponent(notes)}%0A` +
+        `Please provide a quotation.`;
+
+      window.open(`https://wa.me/918511142772?text=${message}`, '_blank');
+    };
+  });
+</script>

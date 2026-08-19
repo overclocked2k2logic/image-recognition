@@ -1,0 +1,223 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import RfqEstimator from '../../components/RfqEstimator.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout 
+  title="Sheet Metal Fabrication & CNC Press Brake Bending | Jecon Engineering Services"
+  description="Precision Sheet Metal Fabrication, 150-Ton CNC Press Brake Bending, ASME Certified TIG/MIG Welding & Industrial Ducting in Vadodara, Gujarat."
+>
+  <Header currentPath="/services/sheet-metal-fabrication" />
+
+  <main class="service-detail-main">
+    <div class="service-hero-section">
+      <div class="container">
+        <div class="service-hero-content">
+          <div class="tech-badge amber">
+            <span class="dot"></span>
+            <span>FABRICATION & WELDING EXCELLENCE</span>
+          </div>
+          <h1>Sheet Metal & <span class="gradient-text-orange">Heavy Fabrication</span></h1>
+          <p>
+            From precision electronic enclosures and 150-ton CNC press brake bending to heavy industrial ducting, skid bases, and ASME certified welding assemblies.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="section service-body-section">
+      <div class="container">
+        <div class="service-detail-grid">
+          
+          <div class="detail-body-col">
+            <div class="media-feature-card">
+              <img src="/assets/images/sheet-bending.jpeg" alt="Operator Bending Sheet Metal with CNC Press Brake" />
+              <div class="media-feature-caption">150-Ton Multi-Axis CNC Hydraulic Press Brake bending high-strength sheet enclosure</div>
+            </div>
+
+            <h2>Comprehensive Sheet Metal & Structural Capabilities</h2>
+            <p>
+              Combining high-tonnage CNC bending with robotic and certified manual welding cells, Jecon Engineering Services Pvt Ltd manufactures turnkey sheet metal assemblies for energy, automation, petrochemical, and electrical industries.
+            </p>
+
+            <div class="feature-bullets-grid">
+              <div class="feat-box cyber-card">
+                <h4>150-Ton CNC Press Brake Bending</h4>
+                <p>Equipped with Delem CNC controllers and hydraulic crowning compensation, guaranteeing consistent angular precision (± 0.25°) across 3.2-meter lengths.</p>
+              </div>
+              <div class="feat-box cyber-card">
+                <h4>ASME Certified TIG / MIG Welding</h4>
+                <p>Qualified welding procedures (WPS/PQR) for pressure boundary vessels, stainless steel piping, and structural skids with 100% NDT inspection.</p>
+              </div>
+              <div class="feat-box cyber-card">
+                <h4>Industrial Ducting (MS / GI / SS)</h4>
+                <p>Fabrication and erection of heavy-duty rectangular and circular ducting systems for petrochemical furnaces, boilers, and exhaust ventilation.</p>
+              </div>
+              <div class="feat-box cyber-card">
+                <h4>Turnkey Surface Finishing & Assembly</h4>
+                <p>In-house PEM fastener insertion, hardware clinching, spot welding, powder coating, sandblasting, and precision gasket installation.</p>
+              </div>
+            </div>
+
+            <!-- Welder visual card -->
+            <div class="media-feature-card">
+              <img src="/assets/images/welding-fabrication.jpeg" alt="Welder fabricating structural steel frame" />
+              <div class="media-feature-caption">Certified TIG welder fabricating heavy structural machinery skid at the Savli plant</div>
+            </div>
+
+          </div>
+
+          <aside class="detail-sidebar-col">
+            <div class="sidebar-card cyber-card">
+              <h4>Request Fabrication RFQ</h4>
+              <p>Send drawings or bill of materials for custom enclosures, tanks, or structural skids.</p>
+              <div class="side-contact-list">
+                <div class="side-item">
+                  <span>General Manager (Plant):</span>
+                  <strong>Mr. Devendra Singh</strong>
+                </div>
+                <div class="side-item">
+                  <span>Direct Hotline:</span>
+                  <a href="tel:+918511142772">+91 85111 42772</a>
+                </div>
+                <div class="side-item">
+                  <span>Inquiry Mail:</span>
+                  <a href="mailto:info@jeconengineers.com">info@jeconengineers.com</a>
+                </div>
+              </div>
+              <a href="#rfq-calculator" class="btn btn-orange w-full">Request Fabrication Quote</a>
+            </div>
+
+            <div class="sidebar-card cyber-card">
+              <h4>Laser Cutting Synergy</h4>
+              <p>All sheet metal profiles are laser cut on our 6kW Fiber Laser for clean, burr-free edges before bending.</p>
+              <a href="/services/laser-cutting" class="btn btn-outline w-full">View Laser Cutting</a>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <RfqEstimator />
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .service-hero-section {
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    padding: 5rem 0 3rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .service-hero-content {
+    max-width: 800px;
+  }
+
+  .service-hero-content h1 {
+    margin: 1rem 0 1rem 0;
+  }
+
+  .service-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 3rem;
+  }
+
+  .detail-body-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .media-feature-card {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .media-feature-card img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+  }
+
+  .media-feature-caption {
+    background: var(--bg-card);
+    padding: 0.85rem 1.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .feat-box {
+    padding: 1.5rem;
+  }
+
+  .feature-bullets-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+
+  .detail-sidebar-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sidebar-card {
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .side-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+    background: var(--bg-tertiary);
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-subtle);
+  }
+
+  .side-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-item span {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-muted);
+  }
+
+  .side-item strong, .side-item a {
+    color: var(--text-primary);
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    .service-detail-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .feature-bullets-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,297 @@
+---
+// Comprehensive Footer Component
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      
+      <!-- Col 1: Brand & Heritage -->
+      <div class="footer-brand-col">
+        <a href="/" class="footer-logo">
+          <div class="logo-symbol">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="34" height="34">
+              <rect width="40" height="40" rx="8" fill="rgba(0, 240, 255, 0.1)" stroke="var(--accent-cyan)" stroke-width="1.5"/>
+              <circle cx="20" cy="20" r="12" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <circle cx="20" cy="20" r="6" stroke="var(--accent-orange)" stroke-width="2"/>
+              <circle cx="20" cy="20" r="2" fill="var(--accent-cyan)"/>
+            </svg>
+          </div>
+          <div class="footer-logo-text">
+            <span class="foot-title">JECON ENGINEERING SERVICES</span>
+            <span class="foot-sub">A Sister Co. of Jecon Engineers Pvt. Ltd.</span>
+          </div>
+        </a>
+        <p class="footer-about">
+          Next-generation precision engineering facility specializing in 5-axis CNC milling, high-power fiber laser cutting, CNC press brake forming, and CAD/CAM product development in Vadodara, Gujarat.
+        </p>
+        
+        <div class="footer-badges">
+          <span class="foot-badge">ISO 9001:2015</span>
+          <span class="foot-badge">ASME SEC IX</span>
+          <span class="foot-badge">MAKE IN INDIA</span>
+        </div>
+      </div>
+
+      <!-- Col 2: Services -->
+      <div class="footer-links-col">
+        <h4 class="footer-heading">Precision Services</h4>
+        <ul class="footer-links">
+          <li><a href="/services/cnc-machining">5-Axis CNC Milling</a></li>
+          <li><a href="/services/cnc-machining">Precision CNC Turning</a></li>
+          <li><a href="/services/laser-cutting">6kW Fiber Laser Cutting</a></li>
+          <li><a href="/services/sheet-metal-fabrication">150-Ton CNC Press Brake Bending</a></li>
+          <li><a href="/services/sheet-metal-fabrication">ASME Certified TIG/MIG Welding</a></li>
+          <li><a href="/services/cad-engineering">3D CAD / CAM & DFM Engineering</a></li>
+          <li><a href="/services/sheet-metal-fabrication">Industrial Ducting (MS / GI / SS)</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Quick Links & Parent Heritage -->
+      <div class="footer-links-col">
+        <h4 class="footer-heading">Company & Heritage</h4>
+        <ul class="footer-links">
+          <li><a href="/about">About Jecon Group</a></li>
+          <li><a href="/capabilities">Machinery & Infrastructure</a></li>
+          <li><a href="/#materials">Materials & Alloys Matrix</a></li>
+          <li><a href="/#quality">Quality Assurance & CMM</a></li>
+          <li><a href="/#gallery">Component Showcase</a></li>
+          <li><a href="https://jeconengineers.com/" target="_blank" rel="noopener noreferrer" class="parent-portal-link">Jecon Engineers Parent Portal ↗</a></li>
+          <li><a href="/contact">Plant & Office Directions</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Key Contacts -->
+      <div class="footer-links-col">
+        <h4 class="footer-heading">Direct Contact</h4>
+        <div class="footer-contact-items">
+          <div class="foot-contact-item">
+            <span class="foot-c-lbl">Manufacturing Plant:</span>
+            <span>Plot 552 & 557, GIDC Savli, Manjusar, Vadodara – 391775</span>
+          </div>
+          <div class="foot-contact-item">
+            <span class="foot-c-lbl">Corporate Office:</span>
+            <span>802, Neptune Edge, Sarabhai Society, Racecourse, Vadodara – 390007</span>
+          </div>
+          <div class="foot-contact-item">
+            <span class="foot-c-lbl">Sales & RFQ:</span>
+            <a href="tel:+918511142772">+91 85111 42772 (Mr. Devendra Singh)</a>
+          </div>
+          <div class="foot-contact-item">
+            <span class="foot-c-lbl">Email:</span>
+            <a href="mailto:info@jeconengineers.com">info@jeconengineers.com</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-copy">
+        &copy; {new Date().getFullYear()} <strong>Jecon Engineering Services Pvt. Ltd.</strong> All Rights Reserved. A Sister Company of <strong>Jecon Engineers Pvt. Ltd.</strong>
+      </div>
+      <div class="footer-tagline">
+        Engineered with Micron Precision in Vadodara, Gujarat, India.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: #080B10;
+    border-top: 1px solid #2D333F;
+    padding-top: 5.5rem;
+    padding-bottom: 3rem;
+    color: #94a3b8;
+  }
+
+  [data-theme="light"] .site-footer {
+    background: #0b1120;
+    border-top: 1px solid rgba(148, 163, 184, 0.15);
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+    gap: 3.5rem;
+    margin-bottom: 4rem;
+  }
+
+  /* Logo */
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-bottom: 1.25rem;
+    text-decoration: none;
+  }
+
+  .footer-logo-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foot-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: #f8fafc;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  }
+
+  .foot-sub {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: #38bdf8;
+    letter-spacing: 0.05em;
+    margin-top: 0.2rem;
+  }
+
+  .footer-about {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+    color: #94a3b8;
+  }
+
+  .footer-badges {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .foot-badge {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    padding: 0.28rem 0.6rem;
+    border-radius: var(--radius-sm);
+  }
+
+  /* Links */
+  .footer-heading {
+    font-family: var(--font-display);
+    font-size: 1.08rem;
+    font-weight: 700;
+    color: #f8fafc;
+    margin-bottom: 1.35rem;
+    position: relative;
+    padding-bottom: 0.55rem;
+  }
+
+  .footer-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 28px;
+    height: 2.5px;
+    background: #38bdf8;
+    border-radius: 2px;
+  }
+
+  .footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    transition: all 0.25s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    color: #38bdf8;
+    transform: translateX(5px);
+  }
+
+  .parent-portal-link {
+    color: #fb923c !important;
+    font-weight: 600;
+  }
+
+  .parent-portal-link:hover {
+    color: #fdba74 !important;
+  }
+
+  /* Contacts */
+  .footer-contact-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.95rem;
+    font-size: 0.88rem;
+  }
+
+  .foot-contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .foot-c-lbl {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .foot-contact-item a {
+    color: #f8fafc;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+
+  .foot-contact-item a:hover {
+    color: #38bdf8;
+  }
+
+  /* Bottom */
+  .footer-bottom {
+    border-top: 1px solid rgba(148, 163, 184, 0.15);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .footer-copy strong {
+    color: #f8fafc;
+  }
+
+  .footer-tagline {
+    font-family: var(--font-mono);
+    color: #64748b;
+    font-size: 0.78rem;
+  }
+
+  @media (max-width: 1024px) {
+    .footer-top {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .footer-top {
+      grid-template-columns: 1fr;
+    }
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>

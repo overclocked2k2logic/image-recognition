@@ -1,0 +1,467 @@
+---
+// Hero component with video background, HUD telemetry, and interactive controls
+---
+
+<section class="hero-section" id="hero">
+  <!-- Video Background Container -->
+  <div class="video-container">
+    <video 
+      id="hero-video" 
+      class="hero-video" 
+      autoplay 
+      loop 
+      muted 
+      playsinline 
+      poster="/assets/images/cnc-milling.jpeg"
+    >
+      <source src="/assets/videos/cnc-hero-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    
+    <!-- Cyber & Clean Ambient Overlays -->
+    <div class="video-overlay"></div>
+    <div class="video-grid-hud"></div>
+    <div class="laser-scanline"></div>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="container hero-content-wrapper">
+    <div class="hero-content">
+      <!-- Badge / Header Tag -->
+      <div class="hero-badges-row reveal-on-scroll">
+        <div class="tech-badge animate-float">
+          <span class="dot"></span>
+          <span>ADVANCED PRECISION MANUFACTURING</span>
+        </div>
+        <div class="tech-badge amber animate-float" style="animation-delay: 1.5s;">
+          <span class="dot"></span>
+          <span>SAVLI PLANT • VADODARA</span>
+        </div>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="hero-title reveal-on-scroll">
+        High-Precision <span class="gradient-text">CNC Machining</span>, 
+        <span class="gradient-text-orange">Fiber Laser</span> & Fabrication
+      </h1>
+
+      <!-- Description -->
+      <p class="hero-description reveal-on-scroll">
+        <strong>Jecon Engineering Services Pvt Ltd</strong> delivers micron-tolerance CNC turning, 
+        5-axis milling, 6kW high-power fiber laser cutting, and complex industrial sheet metal fabrication. 
+        Engineered with the 25+ year pedigree of <strong>Jecon Engineers Pvt. Ltd.</strong>
+      </p>
+
+      <!-- CTA Action Group -->
+      <div class="hero-cta-group reveal-on-scroll">
+        <a href="#rfq-calculator" class="btn btn-primary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          <span>Calculate Instant RFQ</span>
+        </a>
+        <a href="#services" class="btn btn-outline btn-lg">
+          <span>Explore Capabilities</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+        </a>
+        <a href="tel:+918511142772" class="btn btn-outline btn-lg phone-cta">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Direct Call</span>
+        </a>
+      </div>
+
+      <!-- Live Telemetry HUD Bar with Animated Counters -->
+      <div class="hero-telemetry-grid stagger-parent">
+        <div class="telemetry-card stagger-child">
+          <div class="telemetry-header">
+            <span class="telemetry-label">TOLERANCE SPEC</span>
+            <span class="telemetry-status">± 5 MICRON</span>
+          </div>
+          <div class="telemetry-value">
+            <span data-counter="0.005" data-prefix="±" data-decimals="3">±0.005</span> <span class="unit">mm</span>
+          </div>
+          <div class="telemetry-meta">CMM & Optical Quality Verified</div>
+        </div>
+
+        <div class="telemetry-card stagger-child">
+          <div class="telemetry-header">
+            <span class="telemetry-label">LASER CAPABILITY</span>
+            <span class="telemetry-status active">6 kW FIBER</span>
+          </div>
+          <div class="telemetry-value">
+            <span data-counter="6" data-suffix=" kW">6 kW</span> <span class="unit">Source</span>
+          </div>
+          <div class="telemetry-meta">MS: 25mm | SS: 20mm | AL: 16mm</div>
+        </div>
+
+        <div class="telemetry-card stagger-child">
+          <div class="telemetry-header">
+            <span class="telemetry-label">FABRICATION PRESS</span>
+            <span class="telemetry-status">CNC HYDRAULIC</span>
+          </div>
+          <div class="telemetry-value">
+            <span data-counter="150" data-suffix=" Tons">150 Tons</span>
+          </div>
+          <div class="telemetry-meta">Multi-axis CNC Bending 3.2m</div>
+        </div>
+
+        <div class="telemetry-card stagger-child">
+          <div class="telemetry-header">
+            <span class="telemetry-label">ENGINEERING HERITAGE</span>
+            <span class="telemetry-status">PARENT CO.</span>
+          </div>
+          <div class="telemetry-value">
+            <span data-counter="25" data-suffix="+ Years">25+ Years</span>
+          </div>
+          <div class="telemetry-meta">Jecon Engineers Petrochem & Power</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HUD Video Floating Controls -->
+  <div class="video-hud-controls">
+    <button type="button" id="video-toggle-btn" class="hud-control-btn" aria-label="Pause or Play video" title="Pause / Play Video">
+      <svg id="icon-pause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+      <svg id="icon-play" class="hidden" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+    </button>
+    <button type="button" id="video-sound-btn" class="hud-control-btn" aria-label="Toggle sound" title="Mute / Unmute">
+      <svg id="icon-muted" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="1" y1="1" x2="23" y2="23"/><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"/><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"/></svg>
+      <svg id="icon-sound" class="hidden" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+    </button>
+    <div class="hud-video-badge">
+      <span class="rec-dot"></span>
+      <span>LIVE WORKSHOP // VADODARA</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-section {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 4.5rem;
+    padding-bottom: 5.5rem;
+  }
+
+  /* Video Background */
+  .video-container {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .video-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to bottom, rgba(10, 13, 18, 0.82) 0%, rgba(10, 13, 18, 0.65) 50%, rgba(10, 13, 18, 0.95) 100%);
+  }
+
+  [data-theme="light"] .video-overlay {
+    background: radial-gradient(circle at 40% 30%, rgba(248, 250, 252, 0.78) 0%, rgba(241, 245, 249, 0.94) 85%);
+  }
+
+  .hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: contrast(1.05) brightness(0.75);
+    transform: scale(1.03);
+    transition: filter 0.3s ease;
+  }
+
+  [data-theme="light"] .hero-video {
+    filter: contrast(1.05) brightness(0.92);
+  }
+
+  .video-grid-hud {
+    position: absolute;
+    inset: 0;
+    background-image: 
+      linear-gradient(rgba(14, 165, 233, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(14, 165, 233, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    mask-image: radial-gradient(ellipse at center, black 45%, transparent 85%);
+    opacity: 0.6;
+  }
+
+  .laser-scanline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent-cyan), #ffffff, var(--accent-orange), transparent);
+    box-shadow: 0 0 15px var(--accent-cyan-glow);
+    opacity: 0.75;
+    animation: scan 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  @keyframes scan {
+    0% { transform: translateY(-50px); opacity: 0; }
+    10% { opacity: 0.9; }
+    90% { opacity: 0.9; }
+    100% { transform: translateY(92vh); opacity: 0; }
+  }
+
+  /* Content */
+  .hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .hero-content {
+    max-width: 920px;
+  }
+
+  .hero-badges-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-title {
+    margin-bottom: 1.5rem;
+    line-height: 1.14;
+  }
+
+  .hero-description {
+    font-size: 1.22rem;
+    line-height: 1.75;
+    margin-bottom: 2.25rem;
+    color: var(--text-secondary);
+    max-width: 800px;
+  }
+
+  .hero-description strong {
+    color: var(--text-primary);
+  }
+
+  .hero-cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .btn-lg {
+    padding: 1rem 2.1rem;
+    font-size: 1.05rem;
+  }
+
+  /* Telemetry Grid */
+  .hero-telemetry-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin-top: 1rem;
+  }
+
+  .telemetry-card {
+    background: rgba(22, 26, 34, 0.92);
+    border: 1px solid #2D333F;
+    border-radius: var(--radius-md);
+    padding: 1.35rem;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .telemetry-card:hover {
+    border-color: rgba(14, 165, 233, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.65), 0 0 20px rgba(14, 165, 233, 0.12);
+  }
+
+  .telemetry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+  }
+
+  .telemetry-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+  }
+
+  .telemetry-status {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--accent-cyan);
+    background: var(--accent-cyan-subtle);
+    padding: 0.18rem 0.45rem;
+    border-radius: 4px;
+  }
+
+  .telemetry-status.active {
+    color: var(--accent-orange);
+    background: rgba(234, 88, 12, 0.1);
+  }
+
+  .telemetry-value {
+    font-family: var(--font-mono);
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1.2;
+    margin-bottom: 0.4rem;
+  }
+
+  .telemetry-value .unit {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--accent-cyan);
+  }
+
+  .telemetry-meta {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.45;
+  }
+
+  /* HUD Video Controls */
+  .video-hud-controls {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: rgba(10, 13, 18, 0.75);
+    border: 1px solid #2D333F;
+    padding: 0.45rem 0.95rem;
+    border-radius: var(--radius-full);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .hud-control-btn {
+    background: rgba(255, 255, 255, 0.06);
+    border: none;
+    color: var(--text-primary);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .hud-control-btn:hover {
+    background: var(--accent-cyan);
+    color: #ffffff;
+  }
+
+  .hud-video-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    padding-left: 0.5rem;
+    border-left: 1px solid var(--border-subtle);
+  }
+
+  .rec-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ef4444;
+    box-shadow: 0 0 8px #ef4444;
+    animation: blink 1.2s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  @media (max-width: 1024px) {
+    .hero-telemetry-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-section {
+      min-height: auto;
+      padding-top: 3.5rem;
+      padding-bottom: 4rem;
+    }
+    .hero-telemetry-grid {
+      grid-template-columns: 1fr;
+    }
+    .hero-description {
+      font-size: 1.1rem;
+    }
+    .video-hud-controls {
+      display: none;
+    }
+  }
+</style>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('hero-video');
+    const toggleBtn = document.getElementById('video-toggle-btn');
+    const soundBtn = document.getElementById('video-sound-btn');
+    const iconPause = document.getElementById('icon-pause');
+    const iconPlay = document.getElementById('icon-play');
+    const iconMuted = document.getElementById('icon-muted');
+    const iconSound = document.getElementById('icon-sound');
+
+    if (toggleBtn && video) {
+      toggleBtn.addEventListener('click', () => {
+        if (video.paused) {
+          video.play();
+          iconPlay?.classList.add('hidden');
+          iconPause?.classList.remove('hidden');
+        } else {
+          video.pause();
+          iconPause?.classList.add('hidden');
+          iconPlay?.classList.remove('hidden');
+        }
+      });
+    }
+
+    if (soundBtn && video) {
+      soundBtn.addEventListener('click', () => {
+        if (video.muted) {
+          video.muted = false;
+          iconMuted?.classList.add('hidden');
+          iconSound?.classList.remove('hidden');
+        } else {
+          video.muted = true;
+          iconSound?.classList.add('hidden');
+          iconMuted?.classList.remove('hidden');
+        }
+      });
+    }
+  });
+</script>

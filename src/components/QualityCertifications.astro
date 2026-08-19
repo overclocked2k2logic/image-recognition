@@ -1,0 +1,200 @@
+---
+// Quality Assurance & Certifications Section
+---
+
+<section class="section quality-section" id="quality">
+  <div class="container">
+    <div class="quality-wrapper">
+      
+      <!-- Left Column -->
+      <div class="quality-intro reveal-left">
+        <div class="tech-badge">
+          <span class="dot"></span>
+          <span>QUALITY ASSURANCE & METROLOGY</span>
+        </div>
+        <h2>Zero-Defect Quality <span class="gradient-text">Engineering Standards</span></h2>
+        <p>
+          At Jecon Engineering Services Pvt Ltd, precision is validated through rigorous quality control procedures at every stage of fabrication, laser cutting, and multi-axis CNC machining.
+        </p>
+
+        <div class="quality-pillars">
+          <div class="pillar-item">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <div>
+              <strong>100% CMM Verification</strong>
+              <p>Dimensional tolerance reporting down to 0.001mm with calibrated probe inspection.</p>
+            </div>
+          </div>
+
+          <div class="pillar-item">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-orange)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <div>
+              <strong>Mill Test Certificate (MTR 3.1)</strong>
+              <p>Direct heat number traceability and chemical composition test sheets for all raw metals.</p>
+            </div>
+          </div>
+
+          <div class="pillar-item">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div>
+              <strong>ISO 9001:2015 Compliant QMS</strong>
+              <p>Standard Operating Procedures (SOP), First Article Inspection (FAI) and CPK process control.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Visual QA Matrix with Animated Counters -->
+      <div class="quality-cards-grid reveal-right stagger-parent">
+        <div class="qa-stat-card cyber-card stagger-child">
+          <div class="qa-stat-num" data-counter="99.98" data-suffix="%" data-decimals="2">99.98%</div>
+          <div class="qa-stat-lbl">First Pass Yield Rate</div>
+          <p>Continuous statistical process control minimizes scrap and guarantees repetitive accuracy.</p>
+        </div>
+
+        <div class="qa-stat-card cyber-card stagger-child">
+          <div class="qa-stat-num" data-counter="0.005" data-prefix="±" data-suffix=" mm" data-decimals="3">±0.005 mm</div>
+          <div class="qa-stat-lbl">Micron Tolerance Capability</div>
+          <p>Verified on Coordinate Measuring Machine under climate-controlled 20°C standards.</p>
+        </div>
+
+        <div class="qa-stat-card cyber-card stagger-child">
+          <div class="qa-stat-num" data-counter="100" data-suffix="%">100%</div>
+          <div class="qa-stat-lbl">Traceable Material Certificates</div>
+          <p>Every single manufactured batch is serialized and archived for lifetime customer traceability.</p>
+        </div>
+
+        <div class="qa-stat-card cyber-card stagger-child">
+          <div class="qa-stat-num">ASME IX</div>
+          <div class="qa-stat-lbl">Certified Welders</div>
+          <p>Qualified welding procedures (WPS/PQR) for pressure boundary vessels, piping, and structures.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .quality-section {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .quality-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.5rem;
+    align-items: center;
+  }
+
+  .quality-intro h2 {
+    margin: 1.25rem 0 1.25rem 0;
+  }
+
+  .quality-intro p {
+    font-size: 1.08rem;
+    line-height: 1.7;
+    margin-bottom: 2.25rem;
+    color: var(--text-secondary);
+  }
+
+  .quality-pillars {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .pillar-item {
+    display: flex;
+    gap: 1.15rem;
+    align-items: flex-start;
+  }
+
+  .pillar-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+
+  .pillar-item:hover .pillar-icon {
+    transform: scale(1.08) rotate(4deg);
+    border-color: var(--accent-cyan);
+  }
+
+  .pillar-item strong {
+    display: block;
+    font-size: 1.05rem;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+  }
+
+  .pillar-item p {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* Right Side Grid */
+  .quality-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .qa-stat-card {
+    padding: 1.85rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .qa-stat-num {
+    font-family: var(--font-mono);
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--accent-cyan);
+    margin-bottom: 0.35rem;
+  }
+
+  .qa-stat-lbl {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.98rem;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  .qa-stat-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 992px) {
+    .quality-wrapper {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .quality-cards-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import ContactHub from '../components/ContactHub.astro';
+import RfqEstimator from '../components/RfqEstimator.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Contact & Plant Locations | Jecon Engineering Services Pvt Ltd"
+  description="Contact Jecon Engineering Services Pvt Ltd. Manufacturing works in GIDC Savli Manjusar & Corporate Office in Racecourse, Vadodara, Gujarat."
+>
+  <Header currentPath="/contact" />
+
+  <main>
+    <div class="contact-hero-section">
+      <div class="container">
+        <div class="contact-hero-content">
+          <div class="tech-badge amber">
+            <span class="dot"></span>
+            <span>CONTACT & RFQ DESK</span>
+          </div>
+          <h1>Connect with our <span class="gradient-text-orange">Engineering Team</span></h1>
+          <p>
+            Have a technical drawing to quote or need on-site consultation? Contact our Savli manufacturing plant or corporate office in Vadodara.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <ContactHub />
+    <RfqEstimator />
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .contact-hero-section {
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    padding: 5rem 0 3rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .contact-hero-content {
+    max-width: 800px;
+  }
+
+  .contact-hero-content h1 {
+    margin: 1rem 0 1rem 0;
+  }
+</style>

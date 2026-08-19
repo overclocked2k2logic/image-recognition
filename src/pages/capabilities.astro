@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import MachineDeck from '../components/MachineDeck.astro';
+import MaterialsGuide from '../components/MaterialsGuide.astro';
+import QualityCertifications from '../components/QualityCertifications.astro';
+import RfqEstimator from '../components/RfqEstimator.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Manufacturing Capabilities & Machine Fleet | Jecon Engineering Services"
+  description="Full infrastructure specs of Jecon Engineering Services: 5-Axis VMC, 6kW Fiber Laser, 150-Ton Press Brake, Metrology Lab & Materials in Vadodara, Gujarat."
+>
+  <Header currentPath="/capabilities" />
+
+  <main>
+    <div class="service-hero-section">
+      <div class="container">
+        <div class="service-hero-content">
+          <div class="tech-badge">
+            <span class="dot"></span>
+            <span>MANUFACTURING INFRASTRUCTURE</span>
+          </div>
+          <h1>Plant Infrastructure & <span class="gradient-text">Machine Capabilities</span></h1>
+          <p>
+            An exhaustive inventory of our high-precision CNC machinery, 6kW fiber laser cutters, fabrication bays, and climate-controlled metrology laboratory in GIDC Savli, Manjusar (Vadodara).
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <MachineDeck />
+    <MaterialsGuide />
+    <QualityCertifications />
+    <RfqEstimator />
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .service-hero-section {
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    padding: 5rem 0 3rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .service-hero-content {
+    max-width: 800px;
+  }
+
+  .service-hero-content h1 {
+    margin: 1rem 0 1rem 0;
+  }
+</style>

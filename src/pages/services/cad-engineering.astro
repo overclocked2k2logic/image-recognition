@@ -1,0 +1,258 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import RfqEstimator from '../../components/RfqEstimator.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout 
+  title="CAD / CAM & Engineering Design Services | Jecon Engineering Services"
+  description="Expert 3D CAD modeling, DFM optimization, FEA analysis, and reverse engineering services in Vadodara, Gujarat. SolidWorks, AutoCAD, and 5-axis CAM programming."
+>
+  <Header currentPath="/services/cad-engineering" />
+
+  <main class="service-detail-main">
+    <div class="service-hero-section">
+      <div class="container">
+        <div class="service-hero-content">
+          <div class="tech-badge blue">
+            <span class="dot"></span>
+            <span>END-TO-END ENGINEERING & DFM</span>
+          </div>
+          <h1>Advanced <span class="gradient-text">CAD / CAM & Engineering</span></h1>
+          <p>
+            Bridging conceptual engineering into production-ready physical components through parametric 3D CAD modeling, finite element analysis (FEA), and 5-axis CAM toolpath optimization.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="section service-body-section">
+      <div class="container">
+        <div class="service-detail-grid">
+          
+          <div class="detail-body-col">
+            <div class="media-feature-card">
+              <img src="/assets/images/cad-workstation.jpeg" alt="CAD Workstation engineering turbine blades and mechanical models" />
+              <div class="media-feature-caption">CAD design workstation rendering complex multi-stage turbine components & flow paths</div>
+            </div>
+
+            <h2>Comprehensive Engineering Design Lifecycle</h2>
+            <p>
+              Whether you need to convert legacy 2D blueprints into intelligent 3D CAD models, optimize an existing part for CNC milling cycle times, or perform reverse engineering on a worn plant component, our engineering team in Vadodara provides end-to-end technical support.
+            </p>
+
+            <div class="feature-bullets-grid">
+              <div class="feat-box cyber-card">
+                <h4>Design for Manufacturability (DFM)</h4>
+                <p>We review wall thicknesses, draft angles, tool clearances, and corner radii before cutting metal, drastically cutting machining cycle times.</p>
+              </div>
+              <div class="feat-box cyber-card">
+                <h4>Reverse Engineering</h4>
+                <p>Recreating exact 3D models and manufacturing drawings from physical worn parts, broken gears, or obsolete machinery components.</p>
+              </div>
+              <div class="feat-box cyber-card">
+                <h4>5-Axis CAM Programming</h4>
+                <p>Generating clash-free toolpaths with Mastercam and SolidCAM, optimizing feeds/speeds for maximum cutter life and surface finish.</p>
+              </div>
+              <div class="feat-box cyber-card">
+                <h4>Full GD&T Blueprint Generation</h4>
+                <p>Production-ready engineering drawings with strict Geometric Dimensioning and Tolerancing (GD&T) according to ASME Y14.5 and ISO standards.</p>
+              </div>
+            </div>
+
+            <!-- Blueprint graphic feature -->
+            <div class="blueprint-feature-box cyber-card">
+              <div class="bp-img-wrap">
+                <img src="/assets/images/blueprint-drawing.jpeg" alt="Technical Engineering Blueprint Drawing" />
+              </div>
+              <div class="bp-content">
+                <h4>From Concept Blueprint to Micron-Tolerance Reality</h4>
+                <p>We accept all standard engineering CAD file formats including STEP, IGES, DXF, DWG, SLDPRT, Parasolid (x_t), and PDF prints. Our team provides fast feasibility analysis and DFM suggestions within hours.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <aside class="detail-sidebar-col">
+            <div class="sidebar-card cyber-card">
+              <h4>CAD Model Upload</h4>
+              <p>Upload your 3D CAD model or blueprint for immediate DFM feedback.</p>
+              <div class="side-contact-list">
+                <div class="side-item">
+                  <span>CAD Engineering Lead:</span>
+                  <strong>info@jeconengineers.com</strong>
+                </div>
+                <div class="side-item">
+                  <span>Direct WhatsApp:</span>
+                  <a href="tel:+918511142772">+91 85111 42772</a>
+                </div>
+              </div>
+              <a href="#rfq-calculator" class="btn btn-primary w-full">Upload 3D CAD Model</a>
+            </div>
+
+            <div class="sidebar-card cyber-card">
+              <h4>Integrated Manufacturing</h4>
+              <p>Direct seamless handoff from CAD/CAM model to our 5-axis VMC machines and 6kW fiber laser cutters with zero translation errors.</p>
+              <a href="/services/cnc-machining" class="btn btn-outline w-full">View CNC Machining</a>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <RfqEstimator />
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .service-hero-section {
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    padding: 5rem 0 3rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .service-hero-content {
+    max-width: 800px;
+  }
+
+  .service-hero-content h1 {
+    margin: 1rem 0 1rem 0;
+  }
+
+  .service-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 3rem;
+  }
+
+  .detail-body-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .media-feature-card {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .media-feature-card img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+  }
+
+  .media-feature-caption {
+    background: var(--bg-card);
+    padding: 0.85rem 1.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .feat-box {
+    padding: 1.5rem;
+  }
+
+  .feature-bullets-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+
+  .blueprint-feature-box {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    align-items: center;
+  }
+
+  .bp-img-wrap {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+  }
+
+  .bp-img-wrap img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .bp-content h4 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+
+  .bp-content p {
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .detail-sidebar-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sidebar-card {
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .side-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+    background: var(--bg-tertiary);
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-subtle);
+  }
+
+  .side-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-item span {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-muted);
+  }
+
+  .side-item strong, .side-item a {
+    color: var(--text-primary);
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    .service-detail-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .blueprint-feature-box {
+      grid-template-columns: 1fr;
+    }
+    .feature-bullets-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

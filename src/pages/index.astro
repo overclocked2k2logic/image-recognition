@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import ServicesMatrix from '../components/ServicesMatrix.astro';
+import RfqEstimator from '../components/RfqEstimator.astro';
+import MachineDeck from '../components/MachineDeck.astro';
+import MaterialsGuide from '../components/MaterialsGuide.astro';
+import QualityCertifications from '../components/QualityCertifications.astro';
+import ProjectGallery from '../components/ProjectGallery.astro';
+import SynergyHeritage from '../components/SynergyHeritage.astro';
+import ContactHub from '../components/ContactHub.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Jecon Engineering Services Pvt Ltd | Precision CNC, 6kW Fiber Laser & Fabrication"
+  description="Jecon Engineering Services Pvt Ltd (Sister co. of Jecon Engineers Pvt Ltd) - High-precision 5-axis CNC machining, 6kW fiber laser cutting, CAD/CAM design & heavy sheet metal fabrication in Vadodara, Gujarat."
+>
+  <Header currentPath="/" />
+  
+  <main id="main-content">
+    <Hero />
+    <ServicesMatrix />
+    <RfqEstimator />
+    <MachineDeck />
+    <MaterialsGuide />
+    <QualityCertifications />
+    <ProjectGallery />
+    <SynergyHeritage />
+    <ContactHub />
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    position: relative;
+  }
+</style>

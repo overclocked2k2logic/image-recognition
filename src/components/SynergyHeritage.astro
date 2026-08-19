@@ -1,0 +1,266 @@
+---
+// Synergy & Heritage component linking Jecon Engineers and Jecon Engineering Services
+---
+
+<section class="section synergy-section" id="synergy">
+  <div class="container">
+    <div class="synergy-card cyber-card reveal-scale">
+      <div class="synergy-grid">
+        
+        <div class="synergy-text">
+          <div class="tech-badge amber">
+            <span class="dot"></span>
+            <span>CORPORATE PEDIGREE & SYNERGY</span>
+          </div>
+          <h2>Backed by 25+ Years of <span class="gradient-text">Industrial Excellence</span></h2>
+          <p>
+            <strong>Jecon Engineering Services Pvt. Ltd.</strong> is the specialized advanced manufacturing wing of <strong>Jecon Engineers Pvt. Ltd.</strong> (formerly Jalpa Enterprises) — a premier mechanical contractor trusted by India's largest petrochemical, refinery, power, fertilizer, and gas processing complexes.
+          </p>
+
+          <div class="synergy-comparison">
+            <div class="comp-box parent">
+              <div class="comp-tag">PARENT COMPANY</div>
+              <h4>Jecon Engineers Pvt. Ltd.</h4>
+              <ul>
+                <li>Mechanical plant maintenance & shutdowns</li>
+                <li>Heavy equipment erection (static & rotary)</li>
+                <li>Refinery, chemical & fertilizer turnaround projects</li>
+                <li>Large-scale MS, GI & SS ducting erection</li>
+              </ul>
+              <a href="https://jeconengineers.com/" target="_blank" rel="noopener noreferrer" class="comp-link">
+                <span>Visit Jecon Engineers Original Portal</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+
+            <div class="comp-box sister">
+              <div class="comp-tag active">SISTER COMPANY (THIS HUB)</div>
+              <h4>Jecon Engineering Services Pvt. Ltd.</h4>
+              <ul>
+                <li>Multi-axis precision CNC milling & turning</li>
+                <li>6kW High-power fiber laser profile cutting</li>
+                <li>150-Ton CNC press brake sheet metal forming</li>
+                <li>Advanced CAD / CAM engineering, FEA & DFM</li>
+              </ul>
+              <a href="#rfq-calculator" class="comp-link active">
+                <span>Request Manufacturing RFQ</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="synergy-media">
+          <div class="synergy-img-stack">
+            <img src="/assets/images/blueprint-drawing.jpeg" alt="Jecon Technical Engineering Blueprint" class="img-base" loading="lazy" />
+            <div class="synergy-badge-floating animate-float">
+              <div class="float-num" data-counter="25" data-suffix="+">25+</div>
+              <div class="float-lbl">Years Industrial Engineering Legacy</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .synergy-section {
+    background: var(--bg-primary);
+  }
+
+  .synergy-card {
+    padding: 3.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .synergy-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 0.9fr;
+    gap: 3.5rem;
+    align-items: center;
+  }
+
+  .synergy-text h2 {
+    margin: 1.25rem 0 1.25rem 0;
+  }
+
+  .synergy-text p {
+    font-size: 1.08rem;
+    line-height: 1.7;
+    margin-bottom: 2.25rem;
+    color: var(--text-secondary);
+  }
+
+  .synergy-text strong {
+    color: var(--text-primary);
+  }
+
+  .synergy-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+
+  .comp-box {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+
+  .comp-box:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-active);
+  }
+
+  .comp-box.sister {
+    border-color: var(--border-active);
+    background: var(--accent-cyan-subtle);
+  }
+
+  .comp-tag {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+  }
+
+  .comp-tag.active {
+    color: var(--accent-cyan);
+    font-weight: 700;
+  }
+
+  .comp-box h4 {
+    font-size: 1.08rem;
+    margin-bottom: 0.85rem;
+    color: var(--text-primary);
+  }
+
+  .comp-box ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.35rem;
+    flex-grow: 1;
+  }
+
+  .comp-box ul li {
+    position: relative;
+    padding-left: 1.15rem;
+    line-height: 1.45;
+  }
+
+  .comp-box ul li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: var(--accent-cyan);
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .comp-box.parent ul li::before {
+    color: var(--accent-orange);
+  }
+
+  .comp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: color 0.2s ease;
+  }
+
+  .comp-link:hover {
+    color: var(--accent-orange);
+  }
+
+  .comp-link.active {
+    color: var(--accent-cyan);
+    font-weight: 700;
+  }
+
+  .comp-link.active:hover {
+    color: var(--accent-blue);
+  }
+
+  /* Right Media Stack */
+  .synergy-img-stack {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .img-base {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+
+  .synergy-img-stack:hover .img-base {
+    transform: scale(1.04);
+  }
+
+  .synergy-badge-floating {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--accent-cyan);
+    border-radius: var(--radius-md);
+    padding: 1.35rem;
+    backdrop-filter: blur(14px);
+    box-shadow: var(--shadow-lg), 0 0 25px rgba(2, 132, 199, 0.2);
+  }
+
+  .float-num {
+    font-family: var(--font-mono);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--accent-cyan);
+    line-height: 1;
+    margin-bottom: 0.35rem;
+  }
+
+  .float-lbl {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    max-width: 140px;
+    line-height: 1.35;
+  }
+
+  @media (max-width: 1024px) {
+    .synergy-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+    .synergy-comparison {
+      grid-template-columns: 1fr;
+    }
+    .synergy-card {
+      padding: 2rem;
+    }
+  }
+</style>

@@ -1,0 +1,615 @@
+---
+// Interactive Services Matrix Component
+---
+
+<section class="section services-section" id="services">
+  <div class="container">
+    <!-- Header -->
+    <div class="section-header">
+      <div class="tech-badge">
+        <span class="dot"></span>
+        <span>CORE INDUSTRIAL CAPABILITIES</span>
+      </div>
+      <h2>Precision Manufacturing <span class="gradient-text">& Engineering Services</span></h2>
+      <p>
+        From concept CAD modeling and high-speed CNC milling to high-power fiber laser cutting and heavy fabrication, 
+        our Savli Manjusar plant is equipped for mission-critical industrial demands.
+      </p>
+    </div>
+
+    <!-- Interactive Tabs Navigation -->
+    <div class="services-nav-container">
+      <div class="services-tabs" role="tablist">
+        <button type="button" class="tab-btn active" data-tab="cnc" role="tab" aria-selected="true">
+          <span class="tab-num">01</span>
+          <span class="tab-label">CNC Machining & Turning</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="laser" role="tab" aria-selected="false">
+          <span class="tab-num">02</span>
+          <span class="tab-label">6kW Fiber Laser Cutting</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="cad" role="tab" aria-selected="false">
+          <span class="tab-num">03</span>
+          <span class="tab-label">CAD / CAM & Engineering</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="fabrication" role="tab" aria-selected="false">
+          <span class="tab-num">04</span>
+          <span class="tab-label">Sheet Metal & Fabrication</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Tab Panels Container -->
+    <div class="services-panels">
+      
+      <!-- Panel 1: CNC Machining -->
+      <div class="service-panel active" id="panel-cnc" role="tabpanel">
+        <div class="panel-grid">
+          <div class="panel-media">
+            <div class="media-frame">
+              <img src="/assets/images/cnc-milling.jpeg" alt="Precision CNC Milling Machine cutting metal component at Jecon" loading="lazy" />
+              <div class="media-overlay-tag">
+                <span>VMC 5-AXIS PRECISION</span>
+              </div>
+            </div>
+            <div class="secondary-media-grid">
+              <img src="/assets/images/cnc-parts.jpeg" alt="CNC Machined Metal Parts Finished Components" loading="lazy" />
+              <img src="/assets/images/robotic-machining.jpeg" alt="Robotic Arm Carving Brass and Steel" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="panel-content">
+            <div class="panel-header">
+              <span class="badge-accent">±0.005mm TOLERANCE</span>
+              <h3>High-Precision CNC Milling & Turning</h3>
+              <p>
+                Equipped with state-of-the-art 3-axis, 4-axis, and 5-axis Vertical Machining Centers (VMC) and high-speed CNC turning centers. We manufacture complex aerospace, oil & gas valves, turbine fittings, and custom industrial prototypes with micron precision.
+              </p>
+            </div>
+
+            <!-- Tech Spec Matrix -->
+            <div class="spec-matrix">
+              <div class="spec-item">
+                <span class="spec-name">Axis Capability</span>
+                <span class="spec-val">3, 4 & 5-Axis Simultaneous</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Max Work Envelope</span>
+                <span class="spec-val">1200 x 700 x 600 mm</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Spindle Speed</span>
+                <span class="spec-val">Up to 15,000 RPM</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Tolerances</span>
+                <span class="spec-val highlight">± 0.005 mm (5 Microns)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Supported Materials</span>
+                <span class="spec-val">SS 316/304, AL 6061/7075, Brass, Titanium, EN Series</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Surface Roughness</span>
+                <span class="spec-val">Ra 0.4 – 0.8 µm</span>
+              </div>
+            </div>
+
+            <div class="panel-actions">
+              <a href="/services/cnc-machining" class="btn btn-primary">
+                <span>View Full CNC Specs</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="#rfq-calculator" class="btn btn-outline">Instant CNC RFQ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2: Laser Cutting -->
+      <div class="service-panel" id="panel-laser" role="tabpanel">
+        <div class="panel-grid">
+          <div class="panel-media">
+            <div class="media-frame">
+              <img src="/assets/images/laser-cutting.jpeg" alt="High-Power Fiber Laser Cutter cutting steel plate" loading="lazy" />
+              <div class="media-overlay-tag orange">
+                <span>6000W FIBER LASER</span>
+              </div>
+            </div>
+            <div class="secondary-media-grid">
+              <img src="/assets/images/sheet-bending.jpeg" alt="Sheet metal post-laser bending" loading="lazy" />
+              <img src="/assets/images/cnc-parts.jpeg" alt="Laser cut precision profiles" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="panel-content">
+            <div class="panel-header">
+              <span class="badge-accent orange">CLEAN BURR-FREE EDGES</span>
+              <h3>High-Power 6kW Fiber Laser Cutting</h3>
+              <p>
+                Equipped with ultra-fast fiber laser optics and automatic dual shuttle tables, our cutting systems achieve unmatched edge squareness, intricate internal profiling, and lightning-fast turnaround across heavy plates and thin sheet metals.
+              </p>
+            </div>
+
+            <!-- Tech Spec Matrix -->
+            <div class="spec-matrix">
+              <div class="spec-item">
+                <span class="spec-name">Laser Power</span>
+                <span class="spec-val highlight orange">6,000 Watts (6 kW Fiber)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Bed Dimensions</span>
+                <span class="spec-val">3000 mm x 1500 mm (Dual Shuttle)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Mild Steel (MS) Max</span>
+                <span class="spec-val">Up to 25 mm thickness</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Stainless Steel (SS) Max</span>
+                <span class="spec-val">Up to 20 mm (Nitrogen Assist)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Aluminum & Brass Max</span>
+                <span class="spec-val">AL: 16 mm | Brass: 10 mm</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Positional Accuracy</span>
+                <span class="spec-val">± 0.02 mm</span>
+              </div>
+            </div>
+
+            <div class="panel-actions">
+              <a href="/services/laser-cutting" class="btn btn-orange">
+                <span>View Laser Capabilities</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="#rfq-calculator" class="btn btn-outline">Instant Laser RFQ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 3: CAD / CAM Engineering -->
+      <div class="service-panel" id="panel-cad" role="tabpanel">
+        <div class="panel-grid">
+          <div class="panel-media">
+            <div class="media-frame">
+              <img src="/assets/images/cad-workstation.jpeg" alt="CAD Workstation displaying turbine and mechanical assembly" loading="lazy" />
+              <div class="media-overlay-tag blue">
+                <span>CAD / CAM & DFM</span>
+              </div>
+            </div>
+            <div class="secondary-media-grid">
+              <img src="/assets/images/blueprint-drawing.jpeg" alt="Engineering Blueprint Technical Drawing" loading="lazy" />
+              <img src="/assets/images/cad-workstation.jpeg" alt="Turbine component 3D modeling" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="panel-content">
+            <div class="panel-header">
+              <span class="badge-accent">END-TO-END PRODUCT DESIGN</span>
+              <h3>CAD / CAM, DFM & Reverse Engineering</h3>
+              <p>
+                Our engineering team transforms napkin sketches, legacy 2D blueprints, or physical parts into production-ready 3D CAD assemblies. We optimize toolpaths using advanced CAM simulation for minimum cycle time and zero production errors.
+              </p>
+            </div>
+
+            <!-- Tech Spec Matrix -->
+            <div class="spec-matrix">
+              <div class="spec-item">
+                <span class="spec-name">CAD Software</span>
+                <span class="spec-val">SolidWorks, AutoCAD, Creo, Siemens NX</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">CAM Toolpathing</span>
+                <span class="spec-val">Mastercam, SolidCAM 5-Axis</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Design Optimization</span>
+                <span class="spec-val">Design For Manufacturability (DFM)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">File Formats Supported</span>
+                <span class="spec-val highlight">STEP, IGES, DXF, DWG, SLDPRT, Parasolid</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Engineering Analysis</span>
+                <span class="spec-val">Static FEA & Thermal Structural Analysis</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Reverse Engineering</span>
+                <span class="spec-val">3D Laser Scanning & Coordinate Digitization</span>
+              </div>
+            </div>
+
+            <div class="panel-actions">
+              <a href="/services/cad-engineering" class="btn btn-primary">
+                <span>Explore CAD Services</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="#rfq-calculator" class="btn btn-outline">Upload 3D CAD Model</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 4: Sheet Metal & Fabrication -->
+      <div class="service-panel" id="panel-fabrication" role="tabpanel">
+        <div class="panel-grid">
+          <div class="panel-media">
+            <div class="media-frame">
+              <img src="/assets/images/sheet-bending.jpeg" alt="Operator Bending Sheet Metal with CNC Press Brake" loading="lazy" />
+              <div class="media-overlay-tag amber">
+                <span>150-TON PRESS BRAKE</span>
+              </div>
+            </div>
+            <div class="secondary-media-grid">
+              <img src="/assets/images/welding-fabrication.jpeg" alt="Welder Fabricating Steel Frame" loading="lazy" />
+              <img src="/assets/images/sheet-bending.jpeg" alt="Precision sheet enclosure" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="panel-content">
+            <div class="panel-header">
+              <span class="badge-accent amber">HEAVY & LIGHT FABRICATION</span>
+              <h3>Sheet Metal Bending & Structural Welding</h3>
+              <p>
+                From precision electronic enclosures and server racks to heavy industrial ducting (MS, GI, SS), equipment skids, and structural steel frames. Backed by certified TIG, MIG, and automated robotic welding cells.
+              </p>
+            </div>
+
+            <!-- Tech Spec Matrix -->
+            <div class="spec-matrix">
+              <div class="spec-item">
+                <span class="spec-name">Press Brake Capacity</span>
+                <span class="spec-val highlight amber">150 Tons CNC Hydraulic</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Max Bending Length</span>
+                <span class="spec-val">3200 mm (Multi-Axis CNC Gauge)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Welding Capabilities</span>
+                <span class="spec-val">TIG, MIG/MAG, Spot, Robotic Arc</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Ducting Fabrication</span>
+                <span class="spec-val">MS, Galvanized (GI), Stainless Steel</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Welder Certifications</span>
+                <span class="spec-val">ASME Section IX & ISO 9606-1</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Assembly & Finishing</span>
+                <span class="spec-val">Riveting, Clinching, Powder Coating, Sandblasting</span>
+              </div>
+            </div>
+
+            <div class="panel-actions">
+              <a href="/services/sheet-metal-fabrication" class="btn btn-primary">
+                <span>View Fabrication Details</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="#rfq-calculator" class="btn btn-outline">Instant Fabrication RFQ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .services-section {
+    background: #0A0D12;
+    border-top: 1px solid #2D333F;
+    border-bottom: 1px solid #2D333F;
+  }
+
+  /* Interactive Tab Switcher */
+  .services-nav-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+  }
+
+  .services-tabs {
+    display: flex;
+    background: #121417;
+    border: 1px solid #2D333F;
+    padding: 0.35rem;
+    border-radius: var(--radius-full);
+    gap: 0.3rem;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.7rem 1.4rem;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: var(--radius-full);
+    color: #94A3B8;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.93rem;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    white-space: nowrap;
+  }
+
+  .tab-num {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    opacity: 0.6;
+  }
+
+  .tab-btn:hover {
+    color: #F1F5F9;
+    background: rgba(14, 165, 233, 0.06);
+    border-color: rgba(14, 165, 233, 0.2);
+  }
+
+  .tab-btn.active {
+    background: rgba(14, 165, 233, 0.12);
+    border-color: rgba(14, 165, 233, 0.5);
+    color: #0EA5E9;
+    box-shadow: 0 0 18px rgba(14, 165, 233, 0.18), inset 0 0 12px rgba(14, 165, 233, 0.06);
+  }
+
+  /* Panels */
+  .service-panel {
+    display: none;
+    animation: fadeIn 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .service-panel.active {
+    display: block;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .panel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 3.5rem;
+    align-items: center;
+  }
+
+  /* Media Frame */
+  .panel-media {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .media-frame {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .media-frame img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .media-frame:hover img {
+    transform: scale(1.05);
+  }
+
+  .media-overlay-tag {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-active);
+    color: var(--accent-cyan);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.35rem 0.8rem;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
+    backdrop-filter: blur(10px);
+  }
+
+  .media-overlay-tag.orange {
+    border-color: rgba(234, 88, 12, 0.5);
+    color: var(--accent-orange);
+  }
+
+  .media-overlay-tag.blue {
+    border-color: rgba(37, 99, 235, 0.5);
+    color: var(--accent-blue);
+  }
+
+  .media-overlay-tag.amber {
+    border-color: rgba(245, 158, 11, 0.5);
+    color: var(--accent-amber);
+  }
+
+  .secondary-media-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .secondary-media-grid img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease;
+  }
+
+  .secondary-media-grid img:hover {
+    transform: scale(1.03);
+  }
+
+  /* Content */
+  .panel-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .badge-accent {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent-cyan);
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+  }
+
+  .badge-accent.orange { color: var(--accent-orange); }
+  .badge-accent.amber { color: var(--accent-amber); }
+
+  .panel-header h3 {
+    margin-bottom: 0.75rem;
+  }
+
+  /* Tech Spec Matrix */
+  .spec-matrix {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    background: #161A22;
+    border: 1px solid #2D333F;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55);
+  }
+
+  .spec-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 1rem 1.1rem;
+    border-bottom: 1px solid #2D333F;
+    border-right: 1px solid #2D333F;
+    transition: background 0.2s ease;
+  }
+
+  .spec-item:hover {
+    background: rgba(14, 165, 233, 0.04);
+  }
+
+  .spec-item:nth-child(even) {
+    border-right: none;
+  }
+
+  .spec-item:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+
+  .spec-name {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .spec-val {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #F1F5F9;
+  }
+
+  .spec-val.highlight {
+    color: #0EA5E9;
+    font-family: var(--font-mono);
+  }
+
+  .spec-val.highlight.orange {
+    color: var(--accent-orange);
+  }
+
+  .spec-val.highlight.amber {
+    color: var(--accent-amber);
+  }
+
+  .panel-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  @media (max-width: 1024px) {
+    .panel-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .services-tabs {
+      flex-direction: column;
+      width: 100%;
+      border-radius: var(--radius-lg);
+    }
+    .tab-btn {
+      width: 100%;
+      justify-content: flex-start;
+      border-radius: var(--radius-md);
+    }
+    .spec-matrix {
+      grid-template-columns: 1fr;
+    }
+    .spec-item {
+      border-right: none !important;
+    }
+    .spec-item:nth-last-child(-n+1) {
+      border-bottom: none;
+    }
+  }
+</style>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.services-tabs .tab-btn');
+    const panels = document.querySelectorAll('.service-panel');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const targetTab = tab.getAttribute('data-tab');
+
+        // Update active tab button
+        tabs.forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+
+        // Update active panel
+        panels.forEach(panel => {
+          panel.classList.remove('active');
+        });
+        const targetPanel = document.getElementById(`panel-${targetTab}`);
+        if (targetPanel) {
+          targetPanel.classList.add('active');
+        }
+      });
+    });
+  });
+</script>
